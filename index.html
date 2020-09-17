@@ -23,16 +23,16 @@
                 <p>
                     Студентка 3-го курса, есть опыт олимпиад по программированию и математике, быстро усваиваю новый материал, неконфликтна, предпочитаю задачи с четко сформулированным ТЗ, при разработке соблюдаю общепринятый стиль кода.
                 </p>
-                <div id="navskills"></div>
             </section>
-            <section id="skills" class=".sec">
+            <div id="navskills"></div>
+            <section>
                 <h2>навыки</h2>
                 <ul>
                     <li>
-                        C# - около года, опыт работы с WebAPI ASP.NET, Entity Framework ADO.NET, многопоточностью 
+                        <span>C#</span> - около года, опыт работы с <span>WebAPI ASP.NET, Entity Framework ADO.NET,</span> многопоточностью 
                     </li>
                     <li>
-                        C++, Java, SQL - около полугода
+                        <span>C++, Java, SQL</span> - около полугода
                     </li>
                     <li>
                         Знание принципов ООП, паттернов программирования, алгоритмов и структур данных
@@ -46,9 +46,9 @@
                     <li>
                         Английский язык - C1</li>
                 </ul>
-                <div id="naveducation"></div>
             </section>
-            <section id="education" class=".sec">
+            <div id="naveducation"></div>
+            <section>
                 <h2>образование</h2>
                 <p>
                     <b>Университет ИТМО, Санкт-Петербург</b> – <em>бакалавриат</em>
@@ -63,9 +63,9 @@
                     <br>
                     Профиль подготовки “Программирование и интернет-технологии”
                 </p>
-                <div id="navprojects"></div>
             </section>
-            <section id="projects" class=".sec">
+            <div id="navprojects"></div>
+            <section>
                 <h2>проекты</h2>
                 <dl>
                     <dt><a href=https://github.com/hatulmadan1/SmartPlanner/tree/dev>
@@ -88,9 +88,9 @@
                     </dd>
                     </dt>
                 </dl>
-                <div id="navadditional"></div>
             </section>
-            <section id="additional" class=".sec">
+            <div id="navadditional"></div>
+            <section>
                 <h2>дополнительно</h2>
                 <h4>животное</h4>
                 <pre>
@@ -104,34 +104,35 @@
     / 　 づ</pre>
                 <h4>достойный фрагмент кода</h4>
                 <pre><code lang="C#">
-                    public IList<EducationalProgramResultDTO> GetAllByParent(int universityId)
-                        {
-                            var result = DBHelper.GetData(
-                                new EducationalProgramResultDTOMapper(), 
-                                $"SELECT [UniversityId], " +
-                                $"      [Univer_Go].[dbo].[Speciality].[SpecialityCode], " +
-                                $"      [Univer_Go].[dbo].[Speciality].[Name], " +
-                                $"      [Univer_Go].[dbo].[StudyCondition].[Price], " +
-                                $"      [Univer_Go].[dbo].[StudyCondition].[Id], " +
-                                $"      [Univer_Go].[dbo].[Profiles].[profile] " +
-                                $"FROM [Univer_Go].[dbo].[UniversitySpeciality] " +
-                                $"  join " +
-                                $"      [Univer_Go].[dbo].[Speciality] " +
-                                $"  on " +
-                                $"      [SpecialityId] = [Univer_Go].[dbo].[Speciality].[Id]" +
-                                $"  join " +
-                                $"      [Univer_Go].[dbo].[StudyCondition] " +
-                                $"  on " +
-                                $"      [Univer_Go].[dbo].[StudyCondition].[UniversitySpecialityId] = [Univer_Go].[dbo].[UniversitySpeciality].[Id]  " +
-                                $"  join" +
-                                $"      [Univer_Go].[dbo].[Profiles] " +
-                                $"  on" +
-                                $"      [Univer_Go].[dbo].[Profiles].[id] = [Univer_Go].[dbo].[StudyCondition].[ProfileId] " +
-                                $"WHERE UniversityId='{universityId}'");
-                
-                            return result;
-                        }</code></pre>
-                <h4>формула успеха</h4>
+    public IList<EducationalProgramResultDTO> GetAllByParent(int universityId)
+    {
+        var result = DBHelper.GetData(
+        new EducationalProgramResultDTOMapper(), 
+        $"SELECT [UniversityId], " +
+        $"      [Univer_Go].[dbo].[Speciality].[SpecialityCode], " +
+        $"      [Univer_Go].[dbo].[Speciality].[Name], " +
+        $"      [Univer_Go].[dbo].[StudyCondition].[Price], " +
+        $"      [Univer_Go].[dbo].[StudyCondition].[Id], " +
+        $"      [Univer_Go].[dbo].[Profiles].[profile] " +
+        $"FROM [Univer_Go].[dbo].[UniversitySpeciality] " +
+        $"  join " +
+        $"      [Univer_Go].[dbo].[Speciality] " +
+        $"  on " +
+        $"      [SpecialityId] = [Univer_Go].[dbo].[Speciality].[Id]" +
+        $"  join " +
+        $"      [Univer_Go].[dbo].[StudyCondition] " +
+        $"  on " +
+        $"      [Univer_Go].[dbo].[StudyCondition].[UniversitySpecialityId] = [Univer_Go].[dbo].[UniversitySpeciality].[Id]  " +
+        $"  join" +
+        $"      [Univer_Go].[dbo].[Profiles] " +
+        $"  on" +
+        $"      [Univer_Go].[dbo].[Profiles].[id] = [Univer_Go].[dbo].[StudyCondition].[ProfileId] " +
+        $"WHERE UniversityId='{universityId}'");
+             
+        return result;
+    }</code></pre>
+                <h4>формула</h4>
+                <span>log<sub>a</sub>b<sup>2</sup>=2log<sub>a</sub>b</span>
             </section>
         </main>
         <footer>
