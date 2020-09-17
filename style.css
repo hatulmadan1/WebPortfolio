@@ -7,7 +7,6 @@ header {
     position: fixed;
     padding: 5px 0;
     width: 100%;
-    margin: 0;
     background-color: green;
 }
 
@@ -36,8 +35,6 @@ div {
 }
 
 nav {
-    margin: 0;
-    padding: 0px;
     font-size: 30px;
     background-color: inherit;
     width: 100%;
@@ -48,7 +45,6 @@ nav ul, footer ul {
     font-family: Ubuntu;
     font-weight: bolder;
     align-content: center;
-    padding: 0px;
     margin: 0px;
     background-color: inherit;
     text-align: center;
