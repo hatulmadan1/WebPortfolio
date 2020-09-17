@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Tihkomirova Ekaterina - M33021</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#navabout">о себе</a></li>
+                    <li><a href="#navskills">навыки</a></li>
+                    <li><a href="#naveducation">образование</a></li>
+                    <li><a href="#navprojects">проекты</a></li>
+                    <li><a href="#navadditional">дополнительно</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="navabout"></div>
+            <section id="about">
+                <h2 >о себе</h2>
+                <p>
+                    Студентка 3-го курса, есть опыт олимпиад по программированию и математике, быстро усваиваю новый материал, неконфликтна, предпочитаю задачи с четко сформулированным ТЗ, при разработке соблюдаю общепринятый стиль кода.
+                </p>
+                <div id="navskills"></div>
+            </section>
+            <section id="skills" class=".sec">
+                <h2>навыки</h2>
+                <ul>
+                    <li>
+                        C# - около года, опыт работы с WebAPI ASP.NET, Entity Framework ADO.NET, многопоточностью 
+                    </li>
+                    <li>
+                        C++, Java, SQL - около полугода
+                    </li>
+                    <li>
+                        Знание принципов ООП, паттернов программирования, алгоритмов и структур данных
+                    </li> 
+                    <li>
+                        Знание теории по курсу операционных систем и курсу баз данных
+                    </li> 
+                    <li>
+                        Опыт командной разработки в небольших командах 
+                    </li> 
+                    <li>
+                        Английский язык - C1</li>
+                </ul>
+                <div id="naveducation"></div>
+            </section>
+            <section id="education" class=".sec">
+                <h2>образование</h2>
+                <p>
+                    <b>Университет ИТМО, Санкт-Петербург</b> – <em>бакалавриат</em>
+                    <br>
+                    <time datetime="2017">2017 – </time><time datetime="2019">2019</time>
+                    <br>
+                    Профиль подготовки  “Информатика и программирование”</p>
+                <p>
+                    <b>Университет ИТМО, Санкт-Петербург</b> – <em>бакалавриат</em>
+                    <br>
+                    <time datetime="2019">2019 – </time><time datetime="2022">2022</time>
+                    <br>
+                    Профиль подготовки “Программирование и интернет-технологии”
+                </p>
+                <div id="navprojects"></div>
+            </section>
+            <section id="projects" class=".sec">
+                <h2>проекты</h2>
+                <dl>
+                    <dt><a href=https://github.com/hatulmadan1/SmartPlanner/tree/dev>
+                        SmartPlanner
+                    </a></dt>
+                    <dd>
+                        десктопное многопользовательское клиент-серверное приложение
+                    </dd>
+                    <dt><a href="https://github.com/fr0streaper/dtf-hackathon">
+                        Project for DTF Hackathon 2019
+                    </a></dt>
+                    <dd>
+                        прототип игры на Unity
+                    </dd> 
+                    <dt><a href="https://github.com/hatulmadan1/KeepWorking">
+                        KeepWorking
+                    </a></dt>
+                    <dd>
+                        плагин для Visual Studio
+                    </dd>
+                    </dt>
+                </dl>
+                <div id="navadditional"></div>
+            </section>
+            <section id="additional" class=".sec">
+                <h2>дополнительно</h2>
+                <h4>животное</h4>
+                <pre>
+    |￣￣￣￣￣￣￣|
+    |           |
+    | Все плохо  |
+    |           |
+    |＿＿＿＿＿＿＿|
+    (\__/) ||
+    (•ㅅ•) ||
+    / 　 づ</pre>
+                <h4>достойный фрагмент кода</h4>
+                <pre><code lang="C#">
+                    public IList<EducationalProgramResultDTO> GetAllByParent(int universityId)
+                        {
+                            var result = DBHelper.GetData(
+                                new EducationalProgramResultDTOMapper(), 
+                                $"SELECT [UniversityId], " +
+                                $"      [Univer_Go].[dbo].[Speciality].[SpecialityCode], " +
+                                $"      [Univer_Go].[dbo].[Speciality].[Name], " +
+                                $"      [Univer_Go].[dbo].[StudyCondition].[Price], " +
+                                $"      [Univer_Go].[dbo].[StudyCondition].[Id], " +
+                                $"      [Univer_Go].[dbo].[Profiles].[profile] " +
+                                $"FROM [Univer_Go].[dbo].[UniversitySpeciality] " +
+                                $"  join " +
+                                $"      [Univer_Go].[dbo].[Speciality] " +
+                                $"  on " +
+                                $"      [SpecialityId] = [Univer_Go].[dbo].[Speciality].[Id]" +
+                                $"  join " +
+                                $"      [Univer_Go].[dbo].[StudyCondition] " +
+                                $"  on " +
+                                $"      [Univer_Go].[dbo].[StudyCondition].[UniversitySpecialityId] = [Univer_Go].[dbo].[UniversitySpeciality].[Id]  " +
+                                $"  join" +
+                                $"      [Univer_Go].[dbo].[Profiles] " +
+                                $"  on" +
+                                $"      [Univer_Go].[dbo].[Profiles].[id] = [Univer_Go].[dbo].[StudyCondition].[ProfileId] " +
+                                $"WHERE UniversityId='{universityId}'");
+                
+                            return result;
+                        }</code></pre>
+                <h4>формула успеха</h4>
+            </section>
+        </main>
+        <footer>
+            <ul>
+                <li><a href="https://vk.com/id159831907">vk</a></li>
+                <li><a href="https://t.me/hatulmadan">telegram</a></li>
+                <li><a href="https://github.com/hatulmadan1">github</a></li>
+                <li><a href="mailto:katiq@inbox.ru">email</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>
