@@ -101,6 +101,8 @@ dt a:link, dt a:visited {
 p {
     width: 75%;
     padding: 5px 0;
+    text-align: left;
+    align-items: stretch;
 }
 
 h2 {
@@ -118,6 +120,22 @@ pre {
 
 span {
     color: green;
+}
+
+.section-content {
+    margin-left: 5%;
+}
+
+img {
+    width: 20%;
+    height: 20%;
+    border: green;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5px;
+    float: left;
+    margin-right: 3%;
+    margin-top: 1%;
 }
 
 @font-face {
