@@ -30,7 +30,7 @@ footer {
     margin: 0; 
 }
 
-div {
+.navdiv {
     padding: 11px;
 }
 
@@ -40,33 +40,23 @@ nav {
     width: 100%;
 }
 
-nav ul, footer ul {
-    
-    font-family: Ubuntu;
+nav ul {
     font-weight: bolder;
     align-content: center;
     margin: 0px;
     background-color: inherit;
     text-align: center;
     height: 100%;
+    
 }
 
-footer ul {
-    margin: 0;
-    padding-top: 5px;
-}
-
-footer ul li {
-    margin: 5px 0;
-}
-
-nav ul li, footer ul li {
+nav ul li {
     display: inline;
     background-color: inherit;
     padding: 0 2%;
 }
 
-nav ul li a, footer ul li a {
+a {
     background-color: inherit;
     color: white;
 }
@@ -133,9 +123,23 @@ img {
     border-style: solid;
     border-width: 3px;
     border-radius: 5px;
-    float: left;
     margin-right: 3%;
     margin-top: 1%;
+    background-color: white;
+    float: left;
+}
+
+.flexbottom {
+    display: flex;
+    flex-direction: row;
+    background-color: inherit;
+    justify-content: space-around;
+    height: 40px;
+    align-items: center;
+}
+
+div {
+    background-color: inherit;
 }
 
 @font-face {
